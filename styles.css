@@ -1,0 +1,216 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.main{
+ display: flex;
+ flex-flow: column nowrap;
+}
+.margen-interno{
+    padding: 0 50px;
+}
+    .header{
+        background: url(Img-icons/soumaya.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+        .menu{
+            background: rgba(0, 0, 0, .1);
+            display: flex;
+            flex-flow: nowrap;
+            height: 60px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, .5);
+        }
+            .logo{
+                
+                flex: 1 1 auto;
+            }
+                .logo a{
+                    color: whitesmoke;
+                    font-size: 30px;
+                    
+                }
+                .logo a:hover{
+                    color: darkslategray;
+                }
+            .nav{
+                
+                flex: 5 1 auto;
+            }
+                .nav a{
+                    color: whitesmoke;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .nav a:hover{
+                    color: darkslategray;
+                }
+            .social{
+                display: flex;
+                flex: 1 1 auto;
+            }
+                .social a{
+                    font-size: 18px;
+                    color: whitesmoke;
+                    padding: 0 5px;
+            
+                }
+                .social a:hover{
+                    color: darkslategray;
+                }
+        .textoprincipal{
+            /* background: #2a7886; */
+            height: 580px;
+            display: flex;
+            align-items: center;
+        }
+            h1{
+                
+                font-family: Verdana, serif;
+                font-size: 21px;
+                color: whitesmoke;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.6;
+            }
+    .section{
+        background: white;
+        display: flex;
+    }
+        .articulos{
+            background: white;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .articulo{
+                flex: 1 1 40%;
+                color: #444;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 10px 10px 0 0px;
+                background: whitesmoke;
+            }
+            .articulo img{
+                width: 100%;
+            }
+            .imagen{
+                height: 400px;
+                width: 350px;
+            }
+            .articulo a{
+                color: white;
+                font-size: 13px;
+                padding: 10px 10px;
+                background: black;
+                margin: 10px 0px;
+                display: inline-block;
+            }
+            .articulo a:hover{
+                background: lightskyblue;
+            }
+            h3{
+                color: white;
+                font-size: 13px;
+                padding: 10px 0;
+                margin-top: -80px;
+            }
+            h2{
+                font-size: 25px;
+                text-transform: uppercase;
+                padding: 0px 0 10px 0;
+                color: white;
+            }
+            .navegacion{
+                background: black;
+                flex: 1 1 100%;
+                margin: 10px 10px 0 0px;
+            }
+            .navegacion a{
+                color: white;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+        .aside{
+            background: white;
+            flex: 1 1 125%;
+            padding: 0px;
+            margin: 10px 5px 10px 0;
+        }
+        .aside img{
+            width: 100%;
+        }
+        h4{
+            background: black;
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+            .publicidad{
+                ;
+            }
+    .footer{
+        background:#000;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+        .pie{
+            /* background: #ffa41b; */
+            width: 300px;
+        }
+        .pie a{
+            color: white;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+        }
+
+@media all and (max-width: 948px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .textoprincipal{
+        height: 450px;
+    }
+}
+@media all and (max-width: 762px){
+    .articulos {
+       flex-direction: column; 
+    }
+    .off {display: none;}
+    .nav a {
+        font-size: 25px;
+    }
+@media all and (max-width: 650px){
+    
+}
+}
